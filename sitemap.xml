@@ -3,12 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://opendacs.github.io/</loc>
+    <loc>https://opendacs.github.io/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://opendacs.github.io/tags/</loc>
+    <loc>https://opendacs.github.io/</loc>
     <priority>0</priority>
   </url>
   
