@@ -1,25 +1,23 @@
-baseURL = "https://opendacs.github.io"
+baseURL = "/"
 languageCode = "en-US"
-title = "openDACs"
-themesDir = "themes"
+defaultContentLanguage = "en"
+
+title = "Hugo Learn Documentation"
 theme = "hugo-theme-learn"
+themesdir = "../.."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
+[params]
+  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  description = "Documentation for Hugo Learn Theme"
+  author = "Mathieu Cornic"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
-
-[params]
-  # Author of the site, will be used in meta information
-  author = "Carlos Kometter and Sasha Zibrov"
-  # Description of the site, will be used in meta information
-  description = ""
-  # Shows a checkmark for visited pages on the menu
-  showVisitedLinks = true
-  # Hide breadcrumbs in the header and only show the current page title
-  disableBreadcrumb = false
-  # Hide Next and Previous page buttons normally displayed full height beside content
-  disableNextPrev = false
 
 [Languages]
 [Languages.en]
