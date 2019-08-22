@@ -1,3 +1,11 @@
+---
+title: AC Box assembly instructions
+author: Sasha Zibrov
+date: '2019-08-22'
+categories:
+  - instructions
+  - hardware
+---
 # AC Box based on dual [AD9854](https://www.analog.com/media/en/technical-documentation/data-sheets/AD9854.pdf)
 
 ## Part List
@@ -37,7 +45,7 @@ The original evaluation board from analog devices is no longer sold, instead we 
 <br>
 <img align="middle" width="400px" alt="Board" src="img/acbox_board.jpg">
 
-to use this board you first need to make sure that **pin 70** "S/P Select" is set to serial programming mode (**LOW**), 
+to use this board you first need to make sure that **pin 70** "S/P Select" is set to serial programming mode (**LOW**),
 <br>
 <img align="middle" width="400px" alt="Board pinout" src="img/acbox_pinout.png">
 
