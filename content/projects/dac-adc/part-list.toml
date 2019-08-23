@@ -1,0 +1,5 @@
+[table]
+  [[row]]
+  data = ["Part", "Supplier"]
+  [[row]]
+  data = ["AB", "BA"]
