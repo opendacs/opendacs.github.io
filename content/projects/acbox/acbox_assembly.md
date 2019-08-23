@@ -1,3 +1,11 @@
+---
+title: AC Box Assembly instructions
+author: Sasha Zibrov
+date: '2019-08-22'
+categories:
+  - instructions
+  - hardware
+---
 ## Assembly instructions
 
 ### 1. Prepare the AD9854 Board
