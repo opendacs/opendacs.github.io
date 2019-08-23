@@ -1,0 +1,63 @@
+{{ partial "header.html" . }}
+
+{{if not .IsHome }}
+<h1>{{ .Title | markdownify }}</h1>
+{{ end }}
+
+{{ .Content }}
+this is a project landing page
+<ul>
+  {{ range (where .Data.Pages "Section" "!=" "") }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ range .Data.Section }}
+{{.Title}}
+{{ end }}
+
+{{ if .Sections }}
+  <ul>
+  {{ range .Sections }}
+      <li>
+        <a href="{{ .URL }}"> {{ .Title}} </a>
+        <!-- <a href="{{.URL}}"">{{ .Title | markdownify }}</a> -->
+      </li>
+  {{ end }}
+  </ul>
+{{ end }}
+
+{{ partial "footer.html" . }}
+
+<!-- {{ define "main" }}
+
+<main id="list">
+
+    <div class="docs-grid">
+        <div class="docs-sidebar">
+            {{- partial "menu.html" . -}}
+        </div>
+
+        <div class="docs-content">
+            {{- partial "breadcrumb.html" . -}}
+
+            <h1>{{ .Params.headline }}</h1>
+            {{ .Content }}
+
+            {{/*  Comments     */}}
+
+            <ul class="list features-grid">
+                {{ $combined := union .Pages .Sections }}
+                {{ range $combined.ByWeight }}
+                <li class="list list--bare card">
+                    <a href="{{ .RelPermalink }}"><h3>{{ .Title }}</h3></a>
+                    <p>{{ .Summary }}</p>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</main>
+
+{{ end }} -->
