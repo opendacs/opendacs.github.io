@@ -5,6 +5,7 @@ date: '2019-08-22'
 categories:
   - instructions
   - hardware
+instruments: "AD9854 ACbox"
 ---
 ## Assembly instructions
 

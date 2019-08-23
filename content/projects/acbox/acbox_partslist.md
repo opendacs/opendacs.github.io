@@ -5,6 +5,7 @@ date: '2019-08-22'
 categories:
   - instructions
   - hardware
+instruments: "AD9854 ACbox"
 ---
 # AC Box based on dual [AD9854](https://www.analog.com/media/en/technical-documentation/data-sheets/AD9854.pdf)
 
