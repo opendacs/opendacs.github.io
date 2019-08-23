@@ -34,8 +34,8 @@ footnotereturnlinkcontents = "↩"
     url = "/projects/"
     weight = 4
 [[menu.main]]
-    name = "Tags"
-    url = "/tags/"
+    name = "Categories"
+    url = "/categories/"
     weight = 5
 
 [params]
