@@ -2,7 +2,7 @@
   [[row]]
   data = ["PART", "SUPPLIER", "PART #", "PRICE", "QTY", "SUBTOTAL"]
   [[row]]
-  data = ["AD5764 Eval Board", "Digikey", "EVAL-AD5764EBZ-ND", "$92.81", "1", "$95.6"]
+  data = ["AD5764 Eval Board", <a href="https://www.digikey.com/short/prjbcm">Digikey</a>, "EVAL-AD5764EBZ-ND", "$92.81", "1", "$95.6"]
   [[row]]
   data = ["AD7734 Eval board", "Digikey", "EVAL-AD7734EBZ-ND", "$55.31", "1", "$55.31"]
   [[row]]
