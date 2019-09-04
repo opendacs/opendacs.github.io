@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Instruments on openDACs</title>
+    <link>https://opendacs.github.io/instruments/</link>
+    <description>Recent content in Instruments on openDACs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://opendacs.github.io/instruments/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DAC-ADC (16 bit)</title>
+      <link>https://opendacs.github.io/instruments/dac-adc-16-bit/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/instruments/dac-adc-16-bit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AD9854 ACbox</title>
+      <link>https://opendacs.github.io/instruments/ad9854-acbox/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/instruments/ad9854-acbox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>acbox</title>
+      <link>https://opendacs.github.io/instruments/acbox/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/instruments/acbox/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

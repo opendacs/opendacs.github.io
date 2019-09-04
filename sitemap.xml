@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://opendacs.github.io/categories/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/instruments/dac-adc-16-bit/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/dac-adc/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/dac-adc/dac-adc_assembly/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/instruments/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/categories/hardware/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/categories/instructions/</loc>
+    <lastmod>2019-09-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/acbox/acbox_assembly/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/acbox/acbox_partslist/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/acbox/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/instruments/ad9854-acbox/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/dac-adc/note2/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/instruments/acbox/</loc>
+    <lastmod>2019-08-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://opendacs.github.io/projects/</loc>
+  </url>
+  
+</urlset>

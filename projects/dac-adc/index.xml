@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DAC-ADC (16 bit) on openDACs</title>
+    <link>https://opendacs.github.io/projects/dac-adc/</link>
+    <description>Recent content in DAC-ADC (16 bit) on openDACs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://opendacs.github.io/projects/dac-adc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DAC-ADC (16 bit) Assembly instructions</title>
+      <link>https://opendacs.github.io/projects/dac-adc/dac-adc_assembly/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/projects/dac-adc/dac-adc_assembly/</guid>
+      <description>Assembly instructions Schematics Eval boards Some AD5764 eval boards have J21 unpopulated. If you encountered this, solder a 14-pin header to the AD5764 eval board so the Arduino can communicate with the AD5764 via SPI.
+The AD5764 eval board has 14 jumpers that set various options on the board. Refer to the datasheet for a complete description. For the DAC-ADC, set the jumpers like as follows:
+   Jumper # State     LK1 B   Lk2 C   LK3 Inserted   LK4 B   LK5 A and B   LK6 Inserted   LK7 A   LK8 B   LK9 B   LK10 Removed   LK11 A   LK12 Inserted   LK13 Inserted   LK14 Inserted    Similarly, the AD7734 eval board has 30 jumpers that set various options on the board.</description>
+    </item>
+    
+    <item>
+      <title>DAC-ADC Part list</title>
+      <link>https://opendacs.github.io/projects/dac-adc/note2/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/projects/dac-adc/note2/</guid>
+      <description>PART   SUPPLIER   PART #   PRICE   QTY   SUBTOTAL     AD5764 Eval Board   [Digikey](https://www.digikey.com/short/prjbcm)   EVAL-AD5764EBZ-ND   $92.81   1   $95.6     AD7734 Eval board   Digikey   EVAL-AD7734EBZ-ND   $55.31   1   $55.31     5V Voltage Regulator   Digikey   LT1521CST-5#PBF-ND   $4.</description>
+    </item>
+    
+  </channel>
+</rss>

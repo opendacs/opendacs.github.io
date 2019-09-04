@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DAC-ADC (16 bit) Assembly instructions | openDACs</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <div>
+      <img src="/images/logo.jpg" style="max-width:10%;min-width:50px;float:center;position:fixed;" alt="OpenDACs" />
+      </div> <br>
+    <nav style="float:center">
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/tutorials/">Tutorials</a></li>
+      
+      <li><a href="/projects/">Projects</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">DAC-ADC (16 bit) Assembly instructions</span></h1>
+<h2 class="author">Carlos Kometter</h2>
+<h2 class="date">2019/09/03</h2>
+</div>
+
+<main>
+
+
+<h2 id="assembly-instructions">Assembly instructions</h2>
+
+<h3 id="schematics">Schematics</h3>
+
+<p align="center">
+  <img width="700px" alt="Schematics" src="img/schematics.jpg">
+</p>
+
+<h3 id="eval-boards">Eval boards</h3>
+
+<p>Some AD5764 eval boards have J21 unpopulated. If you encountered this, solder a 14-pin header to the AD5764 eval board so the Arduino can communicate with the AD5764 via SPI.</p>
+
+<p align="center">
+  <img width="600px" alt="AD5764 Board" src="img/ad5764-evalboard.jpg">
+</p>
+
+<p>The AD5764 eval board has 14 jumpers that set various options on the board.  Refer to the <a href="https://www.analog.com/media/cn/technical-documentation/evaluation-documentation/106758267AD5764EB_0.pdf">datasheet</a> for a complete description.  For the DAC-ADC, set the jumpers like as follows:</p>
+
+<table>
+<thead>
+<tr>
+<th>Jumper #</th>
+<th>State</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>LK1</td>
+<td>B</td>
+</tr>
+
+<tr>
+<td>Lk2</td>
+<td>C</td>
+</tr>
+
+<tr>
+<td>LK3</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK4</td>
+<td>B</td>
+</tr>
+
+<tr>
+<td>LK5</td>
+<td>A and B</td>
+</tr>
+
+<tr>
+<td>LK6</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK7</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>LK8</td>
+<td>B</td>
+</tr>
+
+<tr>
+<td>LK9</td>
+<td>B</td>
+</tr>
+
+<tr>
+<td>LK10</td>
+<td>Removed</td>
+</tr>
+
+<tr>
+<td>LK11</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>LK12</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK13</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK14</td>
+<td>Inserted</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center">
+  <img width="600px" alt="AD5764 Board Jumpers" src="img/ad5764-evalboard-jumpers.jpg">
+</p>
+
+<p>Similarly, the AD7734 eval board has 30 jumpers that set various options on the board. For the DAC-ADC, set the jumpers as follows</p>
+
+<table>
+<thead>
+<tr>
+<th>Jumper #</th>
+<th>State</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>LK1</td>
+<td>A and B</td>
+</tr>
+
+<tr>
+<td>Lk2</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>LK3</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>LK4</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK6</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK8</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK11</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK12</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK13</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK14</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK15</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK16</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK17</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK18</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK19</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK20</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK25</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK26</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>LK29</td>
+<td>Inserted</td>
+</tr>
+
+<tr>
+<td>Remaining</td>
+<td>Removed</td>
+</tr>
+</tbody>
+</table>
+
+<p align="center">
+  <img width="600px" alt="AD7734 Board Jumpers" src="img/ad7734-evalboard-jumpers.jpg">
+</p>
+
+<h3 id="arduino-shield">Arduino shield</h3>
+
+<p>Now solder headers, screw terminals and the voltage regulator to the DAC-ADC Arduino shield. You can ensure a good fit to the Arduino if you solder the headers with the shield in place, just make sure not to overheat the Arduino (be quick and minimize soldering iron heat).</p>
+
+<p align="center">
+  <img width="600px" alt="Arduino Shield Unpopulated" src="img/arduino-shield-unpopulated.jpg">
+  <br>
+  <img width="600px" alt="Arduino Shield Populated" src="img/arduino-shield-populated.png">
+</p>
+
+<h3 id="enclosure-assembly">Enclosure assembly</h3>
+
+<p>Machine holes in the enclosure front panel for BNC feedthroughs and indicator LEDs, and in the back panel for the D-sub power and USB feedthroughs. Attach all the feedthroughs to the enclosure and attach the front and back panels. For machining simplicity, we used circular BNC feedthroughs. Use lock-washers for the BNCs and make the nuts nice and tight; alternatively, machine D-holes and get appropriate feedthroughs.</p>
+
+<p>Connect the Arduino and USB feedthrough using the 6-inch USB A-B cables, and connect the SMB-BNC cables to the chassis and the eval boards. Then attach the three PCBs (AD5764 and AD7734 eval boards and Arduino) to the enclosure with mushroom-head fasteners.</p>
+
+<p>Make power connections as shown below. Twisted pairs for power likely have no benefit, but they keep things tidy. You will have an easier time with the screw terminals if you use solid conductor hook-up wire. The SMB cables to the eval boards are shown connected below, but other wiring may be easier if you save those until the end.</p>
+
+<p align="center">
+  <img width="600px" alt="Box Power Connector" src="img/box-power-connector.jpg">
+  <br>
+  <img width="600px" alt="Box BNC Wiring" src="img/box-bnc-wiring.jpg">
+</p>
+
+<p>Wire the power and communication indicator LEDs as shown below. For the power LED, solder two 910 ohm resistors at both ends. If the LED doesn’t light up when you plug in the power cable, try reversing the leads.</p>
+
+<p>Make the connections for communication using two ribbon cables between the Arduino shield, and the J21 and J2 pins on the EVAL-AD5764 board and EVAL-AD7734, respectively.</p>
+
+<p align="center">
+  <img width="600px" alt="Box Finished" src="img/box-finished.jpg">
+</p>
+
+<p>Put the lid on your enclosure and the hardware is done! Plug in the power and the +/- 15 V; the indicator LEDs will turn on, but the communication LED will not turn on until the DAC-ADC firmware is uploaded to the Arduino.</p>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  &copy; openDACs 2019 | <a href="https://github.com/opendacs">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

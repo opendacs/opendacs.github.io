@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AC Box Assembly instructions | openDACs</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <div>
+      <img src="/images/logo.jpg" style="max-width:10%;min-width:50px;float:center;position:fixed;" alt="OpenDACs" />
+      </div> <br>
+    <nav style="float:center">
+    <ul class="menu">
+      
+      <li><a href="/">Home</a></li>
+      
+      <li><a href="/tutorials/">Tutorials</a></li>
+      
+      <li><a href="/projects/">Projects</a></li>
+      
+      <li><a href="/categories/">Categories</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">AC Box Assembly instructions</span></h1>
+<h2 class="author">Sasha Zibrov</h2>
+<h2 class="date">2019/08/22</h2>
+</div>
+
+<main>
+
+
+<h2 id="assembly-instructions">Assembly instructions</h2>
+
+<h3 id="prepare-the-ad9854-board">Prepare the AD9854 Board</h3>
+
+<p>The original evaluation board from analog devices is no longer sold, instead we buy boards from amazon or ebay, that could be found by searching for ad9854. The boards look like this:
+<br>
+<img align="middle" width="400px" alt="Board" src="img/acbox_board.jpg"></p>
+
+<p>to use this board you first need to make sure that <strong>pin 70</strong> &ldquo;S/P Select&rdquo; is set to serial programming mode (<strong>LOW</strong>),
+<br>
+<img align="middle" width="400px" alt="Board pinout" src="img/acbox_pinout.png"></p>
+
+<p><br>
+To do this, take off the heatsink and expose the AD9854 chip (left), using a razor blade break the pin (right)
+<p float="center">
+    <img width="400px" alt="chip overview" src="img/acbox1.png">
+    <img width="400px" alt="chip zoomin" src="img/acbox2.png">
+</p></p>
+
+<p>Set the Timer <strong>W1 Jumper</strong> into the left most position:
+<br>
+<img align="middle" width="400px" alt="Board" src="img/acbox3_jumper.jpg">
+<br></p>
+
+<p>Remove the resistor R1 from the board and replace the capacitor C3 with a short (0 Ohm SMD resistor).</p>
+
+<p>Finally, reapply thermal paste to the chip and reinstall the heatsink.</p>
+
+<h3 id="solder-the-arduino-shield">Solder the Arduino Shield</h3>
+
+<p>To set up communication between the Arduino Due and the AD9854 boards we use a shield, which can be ordered from:
+<strong>OSHParK</strong> <a href="https://oshpark.com/shared_projects/UQsKJloo">board link</a></p>
+
+<p>The shield needs to be populated. Solder:
+- headers (2.54 mm spacing, single and double row)
+- screw terminals (TE Connectivity 282834-2)
+- jack receptacle (Cinch Connectivity 131-3701-261)
+- voltage regulator (LT1587CT)
+- oscillator crystal (Abracon ASTX-H11-20.000MHZ-T, 20MHz)
+- flip-flop (TI SN74HC174)
+- resistors (330 Ohm, 0 Ohm)
+- capacitors (Tantalum 10 uF, 100pF  ceramic)</p>
+
+<p>You can ensure a good fit to the Arduino if you solder the headers with the shield in place, just make sure not to overheat the Arduino (be quick and minimize soldering iron heat).</p>
+
+<p><p float="center">
+    <img width="400px" alt="Unpopulated Shield" src="img/shield_empty.jpg">
+    <img width="400px" alt="Populated Shield" src="img/shield_final.png">
+</p></p>
+
+<h3 id="prepare-the-usb-isolator">Prepare the USB isolator:</h3>
+
+<ul>
+<li>Remove jumper JP3</li>
+<li>Set input jumper to SEL/USB</li>
+<li>Set jumper JP2 to 2-3</li>
+<li>Set jumper JP5 to &ldquo;Full SPD&rdquo;</li>
+</ul>
+
+<h3 id="put-everything-together">Put everything together:</h3>
+
+<ul>
+<li>Using spacers mount the AD9854 boards</li>
+<li>Mount the ADUM4160 USB isolator</li>
+<li>Mount the Arduino board with the acbox shield</li>
+<li>Connect the shield headers to the AD9854 boards with jumper cables</li>
+<li>Connect the BNC feedthroughs to AD9854 outputs</li>
+<li>Connect the USB cables</li>
+<li>Connect the Power terminals between the AD9854 and Arduino shield</li>
+</ul>
+
+<h3 id="assembled-acbox">Assembled ACBox</h3>
+
+<p><img width="600px" alt="chip zoomin" src="img/acbox_assembled.png"></p>
+
+</main>
+
+  <footer>
+  <script src="//yihui.name/js/math-code.js"></script>
+<script async src="//mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+<script async src="//yihui.name/js/center-img.js"></script>
+
+  
+  <hr/>
+  &copy; openDACs 2019 | <a href="https://github.com/opendacs">Github</a>
+  
+  </footer>
+  </body>
+</html>
+

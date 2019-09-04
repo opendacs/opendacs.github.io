@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hardware on openDACs</title>
+    <link>https://opendacs.github.io/categories/hardware/</link>
+    <description>Recent content in hardware on openDACs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://opendacs.github.io/categories/hardware/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DAC-ADC (16 bit) Assembly instructions</title>
+      <link>https://opendacs.github.io/projects/dac-adc/dac-adc_assembly/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/projects/dac-adc/dac-adc_assembly/</guid>
+      <description>Assembly instructions Schematics Eval boards Some AD5764 eval boards have J21 unpopulated. If you encountered this, solder a 14-pin header to the AD5764 eval board so the Arduino can communicate with the AD5764 via SPI.
+The AD5764 eval board has 14 jumpers that set various options on the board. Refer to the datasheet for a complete description. For the DAC-ADC, set the jumpers like as follows:
+   Jumper # State     LK1 B   Lk2 C   LK3 Inserted   LK4 B   LK5 A and B   LK6 Inserted   LK7 A   LK8 B   LK9 B   LK10 Removed   LK11 A   LK12 Inserted   LK13 Inserted   LK14 Inserted    Similarly, the AD7734 eval board has 30 jumpers that set various options on the board.</description>
+    </item>
+    
+    <item>
+      <title>AC Box Assembly instructions</title>
+      <link>https://opendacs.github.io/projects/acbox/acbox_assembly/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/projects/acbox/acbox_assembly/</guid>
+      <description>Assembly instructions Prepare the AD9854 Board The original evaluation board from analog devices is no longer sold, instead we buy boards from amazon or ebay, that could be found by searching for ad9854. The boards look like this: to use this board you first need to make sure that pin 70 &amp;ldquo;S/P Select&amp;rdquo; is set to serial programming mode (LOW), 
+To do this, take off the heatsink and expose the AD9854 chip (left), using a razor blade break the pin (right) Set the Timer W1 Jumper into the left most position: Remove the resistor R1 from the board and replace the capacitor C3 with a short (0 Ohm SMD resistor).</description>
+    </item>
+    
+    <item>
+      <title>AC Box Part List</title>
+      <link>https://opendacs.github.io/projects/acbox/acbox_partslist/</link>
+      <pubDate>Thu, 22 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://opendacs.github.io/projects/acbox/acbox_partslist/</guid>
+      <description>AC Box based on dual AD9854 Part List    PART SUPPIER PART # PRICE QTY SUBTOTAL     AD9854 Eval board Ebay/Amazon - $41.76 2 $83.52   ADUM4160 USB isolator Digikey EVAL-ADUM4160EBZ-ND $62.50 1 $62.50   3.3V Voltage Regulator Digikey LT1587CT-3.3#PBF-ND $6.16 1 $6.16   SN74HC174 Flip Flop Digikey 296-1195-1-ND $0.47 1 $0.47   Delay Line Digikey DS1100Z-200+-ND $4.76 1 $4.76   Oscillator 20.</description>
+    </item>
+    
+  </channel>
+</rss>
